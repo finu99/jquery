@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+</head>
+<body>
+   <p>Fade in</p> 
+   <button>Click to fade in boxes</button><br><br>
+   <div id="div1" style="background-color: red; height: 80px; width: 80px;display:none"></div><br>
+   <div id="div2" style="background-color: blue; height: 80px; width: 80px;display:none"></div><br>
+   <div id="div3" style="background-color: burlywood; height: 80px; width: 80px;display:none"></div><br>
+
+
+</body>
+<script>
+  $(document).ready(function(){
+    $("button").click(function(){
+        $("#div1").fadeIn(1000);
+        $("#div2").fadeIn("slow");
+        $("#div3").fadeIn(3000);
+    });
+  });
+</script>
+</html>

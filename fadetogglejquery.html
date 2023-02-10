@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+</head>
+<body>
+    <p>Fade Toggle</p> 
+    <button>Click here</button><br><br>
+    <div id="div1" style="background-color: red; height: 80px; width: 80px;"></div><br>
+    <div id="div2" style="background-color: blue; height: 80px; width: 80px;"></div><br>
+    <div id="div3" style="background-color: burlywood; height: 80px; width: 80px;"></div><br>
+  
+</body>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+        $("#div1").fadeToggle(1000);
+        $("#div2").fadeToggle("slow");
+        $("#div3").fadeToggle(3000);
+        });
+    });
+</script>
+</html>

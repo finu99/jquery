@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+</head>
+
+<body><center>
+   <h1>Jquery</h1>
+   <P>this is an example</P>
+   <button id="hide">Click here</button><br><br>
+   <button id="show">Show</button><BR><BR>
+   <button id="toggle">toggle</button><br><br>
+   <img src="https://t4.ftcdn.net/jpg/02/55/17/43/360_F_255174366_ojDuATz84e5h7lIlxh2moUJa9Kpd5wKk.jpg" id="img"height="500px" width="500px"></center>
+</body>
+<script>
+   $(document).ready(function(){
+      $("#hide").click(function(){
+         $("h1").hide(1000);
+         $("P").hide(1000);
+         $("#img").hide(1000);
+
+      });
+      $("#show").click(function(){
+        $("h1").show(1000);
+        $("p").show(1000);
+        $("#img").show(1000); 
+      });
+      $("#toggle").click(function(){
+         $("h1").toggle(1000);
+         $("p").toggle(1000);
+         $("#img").toggle(1000);
+      });
+   });
+</script>
+</html>
